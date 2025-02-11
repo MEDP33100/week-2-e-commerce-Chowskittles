@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #292b2c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    /* em means 'relative to font size of element */
+    /* https://www.w3schools.com/cssref/css_units.php */
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #343a40;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* product listing grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* product card styling */
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* product image */
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* product title/description */
+.product h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* bold price, spacing from .product p */
+.price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* footer styling */
+footer {
+    background-color: #292b2c;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+/* for small screens (like phones and tablets) */
+@media (max-width: 768px) {
+
+    /* make the products grid more flexible on small screens */
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    /* make images smaller for small screens */
+    .product-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* make header title bigger on small screens */
+    header h1 {
+        font-size: 2em;
+    }
+
+    /* make header text smaller but still readable */
+    header p {
+        font-size: 1em;
+    }
+
+    /* make menu links easier to tap */
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    /* make footer text a little smaller */
+    footer {
+        font-size: 0.9em;
+    }
+
+}
+
+/* light theme styles for spells */
+body.light-theme {
+    background-color: #fff8e1;  /* light golden background */
+    color: #3e2a47;  /* dark brown text color */
+}
+
+body.light-theme header {
+    background-color: #f8c471;  /* soft golden header */
+    color: #3e2a47;  /* dark brown text for readability */
+}
+
+body.light-theme nav {
+    background-color: #f39c12;  /* golden-orange navigation bar */
+}
+
+body.light-theme nav a {
+    color: #fff;  /* white text for navigation links */
+}
+
+body.light-theme .product {
+    background-color: #fff;  /* white background for spell cards */
+    border: 1px solid #f1c40f;  /* golden border for spell cards */
+    color: #3e2a47;  /* text in the spell cards */
+}
+
+body.light-theme .product h2 {
+    color: #f39c12;  /* spell title color */
+}
+
+body.light-theme .product p {
+    color: #555;  /* spell description */
+}
+
+/* dark theme styles for curses*/
+body.dark-theme {
+    background-color: #181818;  /* dark background for dark theme */
+    color: #ccc;  /* light gray text for readability */
+}
+
+body.dark-theme header {
+    background-color: #333;  /* dark header background */
+    color: #fff;  /* white text in header */
+}
+
+body.dark-theme nav {
+    background-color: #222;  /* darker navigation bar */
+}
+
+body.dark-theme nav a {
+    color: #ccc;  /* light gray text for navigation links */
+}
+
+body.dark-theme nav a:hover {
+    text-decoration: underline;  /* underline links on hover */
+}
+
+body.dark-theme .product {
+    background-color: #2c2c2c;  /* dark background for product cards */
+    border: 1px solid #444;  
+    color: #ccc;  /* light text inside product cards - otherwise it's illegible */
+}
+
+body.dark-theme .product h2 {
+    color: #f39c12; /* for the curse titles */
+}
+
+body.dark-theme .product p {
+    color: #aaa;  /* product descriptions */
+}
+
+body.dark-theme footer {
+    background-color: #333;  /* dark footer background */
+    color: #fff;  /* white text in footer */
+}
