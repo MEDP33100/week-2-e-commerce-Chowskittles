@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--line 7 helps keep size appropriate for different devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spells | Arcane Emporium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="light-theme">
+    <header>
+        <h1>📜 Spells of the Arcane 📜</h1>
+        <p>"Wisdom, power, and light—all for those who seek it."</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="spells.html">Spells</a>
+        <a href="curses.html">Curses</a>
+    </nav>
+
+    <main>
+        <section class="products">
+            <article class="product">
+                <img src="images/fireball.jpeg" alt="Fireball" class="product-image">
+                <h2>🔥 Fireball</h2>
+                <p>A devastating explosion of flame.</p>
+                <p class="price">100 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/windwalk.jpeg" alt="Windwalk" class="product-image">
+                <h2>💨 Windwalk</h2>
+                <p>Grants the caster unnatural speed.</p>
+                <p class="price">150 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/arcane_shield.jpeg" alt="Arcane Shield" class="product-image">
+                <h2>🔮 Arcane Shield</h2>
+                <p>Deflects a single incoming attack.</p>
+                <p class="price">125 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/invisibility.jpeg" alt="Invisibility" class="product-image">
+                <h2>🌀 Invisibility</h2>
+                <p>Renders the caster unseen for a short time.</p>
+                <p class="price">200 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/moonlight_veil.jpeg" alt="Moonlight Veil" class="product-image">
+                <h2>🌙 Moonlight Veil</h2>
+                <p>Shrouds the user in a soft glow, revealing hidden truths.</p>
+                <p class="price">180 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/shadowblade.jpeg" alt="Shadow Blade" class="product-image">
+                <h2>🗡 Shadow Blade</h2>
+                <p>Summons a spectral dagger from the void.</p>
+                <p class="price">250 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/waters_embrace.jpeg" alt="Water’s Embrace" class="product-image">
+                <h2>🌊 Water’s Embrace</h2>
+                <p>Allows the caster to breathe and move freely underwater.</p>
+                <p class="price">170 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+
+            <article class="product">
+                <img src="images/time_dilation.jpeg" alt="Time Dilation" class="product-image">
+                <h2>⏳ Time Dilation</h2>
+                <p>Slows time briefly for those nearby.</p>
+                <p class="price">300 Gold</p>
+                <button class="purchase-button">Purchase</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>&copy; 2025 Arcane Emporium. May your magic never falter.</footer>
+</body>
+
+</html>
